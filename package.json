@@ -1,0 +1,10 @@
+{
+  "name": "commitcraft",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"backend/test/*.test.js\" \"tests/frontend/*.test.js\" \"tests/integration/*.test.js\"",
+    "dev:web": "node frontend/dev-server.mjs",
+    "dev:api": "cd backend && npx wrangler dev"
+  }
+}
