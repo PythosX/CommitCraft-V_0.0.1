@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CommitCraft · Every file. A meaningful commit.</title>
+<meta name="description" content="Publish your project to GitHub file by file with meaningful, individual commits.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<script src="js/core/theme-init.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/upload.css">
+<link rel="stylesheet" href="css/commit-plan.css">
+<link rel="stylesheet" href="css/publishing.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-in">
+<header class="nav" id="nav"></header>
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <div>
+        <div id="authError" class="auth-error" hidden></div>
+        <h1>Your folder deserves a better Git history.</h1>
+        <p class="lead">Publish your project to GitHub file by file. Create meaningful commits, control your publishing workflow, and keep every change organized.</p>
+        <div class="cta"><button class="btn btn-primary btn-lg" id="startBtn">Start publishing</button><a class="btn btn-lg" href="#how">See how it works</a></div>
+      </div>
+      <div class="studio" aria-label="Example of a CommitCraft commit plan">
+        <div class="studio-bar"><span class="mono" id="demoRepo">my-portfolio/</span><span class="badge tag" id="demoTag">example plan</span></div>
+        <ol class="rail" id="rail"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features"><div class="container">
+    <div class="section-head"><h2>Built for people who care what their history says</h2><p>One file, one commit, one message you wrote. Everything goes through GitHub's own Git Data API, so the result is a genuine commit history.</p></div>
+    <div class="features" id="featureGrid"></div>
+  </div></section>
+
+  <section class="section" id="how"><div class="container">
+    <div class="section-head"><h2>From folder to history in four steps</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Connect GitHub</h3><p>Sign in with GitHub. Pick a repository and branch, or create a new repository.</p></div>
+      <div class="step"><h3>Upload your folder</h3><p>Drop a folder. Secrets and build output are excluded for you, and you can see why.</p></div>
+      <div class="step"><h3>Review your commits</h3><p>Edit every message, reorder the plan and see which files add or update.</p></div>
+      <div class="step"><h3>Publish your project</h3><p>Watch each commit land, with links to GitHub. Resume if anything is interrupted.</p></div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container"><div class="panel final-cta">
+    <div><h2>Ready to publish a folder properly?</h2><p class="muted" style="margin-top:8px">It takes a GitHub sign-in and about a minute.</p></div>
+    <button class="btn btn-primary btn-lg" id="startBtn2">Start publishing</button>
+  </div></div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div><strong>CommitCraft</strong> <span class="muted">· System developed by PythosX</span></div>
+  <nav aria-label="Footer"><a id="ghLink" href="#" target="_blank" rel="noopener">GitHub repository</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></footer>
+<script type="module" src="js/pages/landing.js"></script>
+</body>
+</html>
