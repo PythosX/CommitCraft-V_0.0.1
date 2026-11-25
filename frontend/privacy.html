@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · CommitCraft</title>
+<meta name="description" content="CommitCraft privacy">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<script src="js/core/theme-init.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/upload.css">
+<link rel="stylesheet" href="css/commit-plan.css">
+<link rel="stylesheet" href="css/publishing.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="nav" id="nav"></header>
+<main class="container legal"><h1>Privacy</h1><p>CommitCraft publishes files from your computer to GitHub repositories you choose. This page describes exactly what is handled.</p>
+<h2>What stays in your browser</h2><p>Your selected folder, commit plan and preferences like theme are kept in your browser (IndexedDB and localStorage) so you can resume a publish. Clear them anytime in Settings. GitHub tokens are never stored in the browser.</p>
+<h2>What our server stores</h2><ul><li>Your GitHub user id, login and avatar URL for the session.</li><li>Your GitHub access token, encrypted with AES-GCM, for up to 7 days or until you sign out.</li><li>Publish jobs: repository, branch, file paths, commit messages and resulting commit SHAs (30 days), and a history summary (90 days).</li><li>Your settings.</li></ul>
+<h2>What we do not store</h2><p>File contents are sent to GitHub to create Git blobs and are not stored by CommitCraft.</p>
+<h2>Your controls</h2><p>Sign out to end the session, use Disconnect GitHub to revoke CommitCraft's access, and clear history from Settings.</p><p style="margin-top:32px"><a class="link" href="/">Back to CommitCraft</a></p></main>
+<script type="module" src="js/pages/legal.js"></script>
+</body>
+</html>

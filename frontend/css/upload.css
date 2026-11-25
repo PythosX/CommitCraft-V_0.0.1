@@ -1,0 +1,22 @@
+.dropzone{display:grid;place-items:center;text-align:center;gap:var(--s3);padding:var(--s7) var(--s5);border:2px dashed var(--border);border-radius:var(--r-panel);background:var(--surface);transition:border-color .15s,background .15s,transform .15s}
+.dropzone.over{border-color:var(--accent);background:var(--accent-soft);transform:scale(1.005)}
+.dropzone svg{width:36px;height:36px;color:var(--accent)}
+.upload-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s3)}
+.upload-stats .card{padding:var(--s4)}
+.explorer{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:var(--s4);align-items:start}
+.tree-wrap{max-height:62vh;overflow:auto}
+.tree{padding:var(--s2)}
+.tree-row{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:7px;min-height:32px;cursor:default}
+.tree-row:hover{background:var(--elevated)}.tree-row.active{background:var(--accent-soft)}
+.tree-row .name{font-family:var(--mono);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;text-align:left}
+.tree-row .size{font-size:12px;color:var(--text-2);font-variant-numeric:tabular-nums}
+.tree-row .twisty{width:18px;height:18px;display:grid;place-items:center;color:var(--text-2);transition:transform .15s}
+.tree-row .twisty[aria-expanded=true]{transform:rotate(90deg)}
+.tree-row.excluded{opacity:.55}
+.preview{position:sticky;top:calc(var(--topbar) + 16px);min-height:220px}
+.preview pre{margin:var(--s3) 0 0;padding:var(--s3);background:var(--bg);border:1px solid var(--border);border-radius:var(--r-sm);max-height:48vh;overflow:auto;font-family:var(--mono);font-size:12.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word;tab-size:2}
+.meta-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px;margin-top:var(--s3)}.meta-grid dt{color:var(--text-2)}
+.excl-item{display:flex;gap:var(--s3);align-items:center;padding:10px var(--s4);border-bottom:1px solid var(--border)}.excl-item:last-child{border:0}
+.excl-item .why{font-size:12.5px;color:var(--text-2)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 6px 3px 10px;border-radius:99px;background:var(--elevated);border:1px solid var(--border);font-family:var(--mono);font-size:12px}
+.chip button{width:18px;height:18px;border-radius:50%;display:grid;place-items:center}.chip button:hover{background:var(--border)}

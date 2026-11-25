@@ -1,0 +1,10 @@
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);margin-bottom:var(--s5)}
+.stats .card{display:flex;flex-direction:column;gap:var(--s2)}
+.hello{display:flex;justify-content:space-between;gap:var(--s5);align-items:center;flex-wrap:wrap;margin-bottom:var(--s5);padding:var(--s5);border-radius:var(--r-panel);border:1px solid var(--border);background:linear-gradient(120deg,var(--accent-soft),transparent 60%),var(--surface)}
+.job-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:var(--s4);align-items:center}
+.job-row .name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.repo-pick{display:flex;align-items:center;gap:var(--s3);padding:12px var(--s4);border-bottom:1px solid var(--border);width:100%;text-align:left;transition:background .12s}
+.repo-pick:last-child{border-bottom:0}.repo-pick:hover{background:var(--elevated)}
+.repo-pick[aria-checked=true]{background:var(--accent-soft);box-shadow:inset 3px 0 var(--accent)}
+.repo-pick .meta{min-width:0;flex:1}.repo-pick .meta b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hist-detail{padding:var(--s4);background:var(--bg);border-top:1px solid var(--border)}
